@@ -1,0 +1,163 @@
+  /* ||Reset*/
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+text-align: center;
+background-color: pink;
+background-image: radial-gradient(white,pink);
+}
+
+main{
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap:3rem;
+padding:1rem;
+}
+
+header,footer{
+background-color: hsla(0, 0%, 0%, 0.866);
+color:white;
+position: sticky;
+}
+
+header{
+top:0;
+}
+
+footer{
+position: sticky;
+bottom:0;
+padding:1rem;
+font-size: 1.3rem;
+}
+
+header h1{
+    padding:1rem;
+}
+
+nav  {
+background-color: whitesmoke;
+padding: 0.5rem;
+border-bottom: px solid black;
+
+}
+
+a {
+margin: 1.5rem;
+font-size: 1.5rem;
+text-decoration: none;
+}
+
+
+a:hover,a:focus{
+color: gray;
+}
+
+nav a,a:visited{
+color: purple;
+}
+
+/* || card*/
+.card {
+scroll-margin-top: 8rem;
+font-size: 1.5rem;
+width: min(100%,350px);
+border: 2px solid black;
+padding:2rem;
+border-radius: 0.5rem;
+background-color:rgba(135, 207, 235, 0.247);
+}
+
+.card:hover{
+background-color: hsla(0, 0%, 0%, 0.34);
+}
+
+card figure{
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+.card img{
+border-radius: 50%;
+border: 5px double black;
+}
+
+.card figcaption{
+padding: 1rem;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: darkcyan;
+}
+
+.card p{
+text-decoration: underline;
+}
+/* ||small */
+@media screen and (min-width:576px) {
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+   }
+.card{
+    width:min(100%,400px)
+}
+.card img{
+  margin-left: 1rem;
+}
+
+}
+
+/* ||medium */
+@media screen and (min-width:768px){
+main{
+    flex-flow: row wrap;
+}
+.card{
+    width:min(100%,350px);
+}
+}
+
+@media screen and (min-width:992px){
+
+nav{
+    display: none;
+}
+main{
+flex-flow: row wrap;
+}
+}
+
+@media screen and (min-width:1000)
+{
+nav{
+    display: none;
+}
+main{
+flex-flow: row wrap;
+}
+
+
+}
